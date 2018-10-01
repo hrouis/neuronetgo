@@ -10,6 +10,15 @@ type Matrix interface {
 	Put(i,j int, val float64) ()
 }
 
+
+// General Matrix structure .
+
+type General struct {
+	Rows, Cols int
+	Data []float64
+	Stride int
+}
+
 /*
 * Function sum returns the sum of all the matrix elements.
  */
